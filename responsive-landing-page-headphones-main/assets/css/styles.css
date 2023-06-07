@@ -13,6 +13,21 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 /*=============== VARIABLES CSS ===============*/
+.circle {
+  opacity: 0.06;
+  left: -160px;
+  top: 20px;
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient( white, transparent);
+  filter: blur(50px);
+}
+.circle-container{
+  display: flex;
+  position: relative;
+}
 :root {
   --header-height: 3rem;
   /*========== Colors ==========*/
@@ -68,6 +83,7 @@
 }
 
 /*=============== BASE ===============*/
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -401,6 +417,8 @@ strong {
 .discount__container {
   position: relative;
   background-color: var(--container-color);
+/*   background-image: url("assets/img/section3Bg.png"); */
+ /*  opacity: 1; */
   padding: 2rem 1.5rem;
   border-radius: .75rem;
 }
