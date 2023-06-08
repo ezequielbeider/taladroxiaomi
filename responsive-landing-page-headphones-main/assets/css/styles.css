@@ -1,3 +1,25 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  padding: 0% 20%;
+  padding-top: 3%;
+}
+
+.grid-item {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
 /*=============== GOOGLE FONTS ===============*/
 @font-face {
   font-family: actay-regular;
@@ -11,20 +33,27 @@
   font-family: visuelt-regular;
   src: url("../fonts/VisueltPro-Regular.ttf");
 }
+@font-face {
+  font-family: visuelt-bold;
+  src: url("../fonts/VisueltPro-Bold.ttf");
+}
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 /*=============== VARIABLES CSS ===============*/
 .circle {
-  opacity: 0.06;
-  left: -160px;
+  opacity: 0.8;
+  left: -190px;
   top: 20px;
   position: absolute;
   width: 600px;
   height: 600px;
-  border-radius: 50%;
-  background: radial-gradient( white, transparent);
-  filter: blur(50px);
+  /* border-radius: 50%; */
+/*   background: radial-gradient( rgba(211, 211, 211, 0.13), transparent); */
+  filter: blur(90px);
+  background-image: url('assets/img/ruido2.png');
 }
 .circle-container{
+  width: 100%;
+  min-width: 100%;
   display: flex;
   position: relative;
 }
@@ -40,7 +69,7 @@
   --white-color: #FFF;
   --body-color: hsl(var(--hue-color), 4%, 6%);
   --container-color: hsl(var(--hue-color), 4%, 10%);
-  --text-gradient: linear-gradient(hsl(var(--hue-color), 4%, 54%), hsl(var(--hue-color), 14%, 18%));
+  --text-gradient: linear-gradient(hsl(var(--hue-color), 14%, 54%), hsl(var(--hue-color), 14%, 18%));
   --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
   --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
   /*========== Font and typography ==========*/
@@ -72,7 +101,7 @@
 @media screen and (min-width: 968px) {
   :root {
     --biggest-font-size: 7.5rem;
-    --bigger-font-size: 4.5rem;
+    --bigger-font-size: 3.5rem;
     --big-font-size: 4rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -247,6 +276,7 @@ img {
 /* Change background header */
 .scroll-header {
   background-color: #181A1B;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Active link */
@@ -259,11 +289,12 @@ img {
 
 /*=============== HOME ===============*/
 .home__img {
-  width: 250px;
+  width: 350px;
   position: absolute;
-  top: -16rem;
+  top: 2rem;
   right: 1.5rem;
 }
+
 
 .home__data {
   padding-top: 5rem;
@@ -300,7 +331,8 @@ strong {
 
 .home__title-description {
   color: #FF6200;
-  font-size: var(--h3-font-size);
+  font-family: visuelt-bold;
+  font-size: var(--h2-font-size);
   font-weight: 900;
   margin-bottom: var(--mb-1);
 }
@@ -382,7 +414,7 @@ strong {
 }
 
 .specs__data:nth-child(1), .specs__data:nth-child(4) {
-  margin-left: 1.5rem;
+  margin-left: 0rem;
 }
 
 .specs__img {
@@ -433,7 +465,7 @@ strong {
 }
 
 .discount__img {
-  width: 300px;
+  width: 100px;
   position: absolute;
   top: 4rem;
   right: -11rem;
@@ -453,6 +485,7 @@ strong {
 .products__card {
   position: relative;
   height: 132px;
+/*   background-image: url("assets/img/section9img4.png"); */
   background-color: var(--container-color);
   padding: .75rem;
   border-radius: .5rem;
@@ -803,6 +836,16 @@ strong {
     left: -2rem;
     top: 6rem;
   }
+  .home__img2 {
+
+    width: 700px;
+    height: 500px;
+    margin-top: -7%;
+    margin-left: -24%;
+    filter: blur(20%);
+
+
+  }
   .home__title {
     top: -5rem;
     left: 3.5rem;
@@ -814,7 +857,7 @@ strong {
     width: 100px;
   }
   .discount__img {
-    width: 450px;
+    width: 320px;
   }
   .footer__container {
     padding-top: 3rem;
