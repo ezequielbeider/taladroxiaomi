@@ -79,6 +79,11 @@ sr.reveal(`.home__img`,{delay: 900, origin: 'top'})
 sr.reveal(`.home__img2`,{delay: 900, origin: 'top'})
 
 sr.reveal(`.discount__container`,{delay: 900, origin: 'top'})
+
+sr.reveal(`.discount__img`,{delay: 900, origin: 'top'})
+sr.reveal(`.discount__animate`,{delay: 900, origin: 'top'})
+
+
 sr.reveal(`.grid-container`,{delay: 900, origin: 'top'})
 sr.reveal(`.imagenGrande`,{delay: 900, origin: 'top'})
 
