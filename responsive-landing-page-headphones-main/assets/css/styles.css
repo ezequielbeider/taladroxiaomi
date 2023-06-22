@@ -1,7 +1,7 @@
 .gradient-infinito {
-  background: linear-gradient(to right, #0f0f0f, #1d1d1d);
+  background: linear-gradient(to right, #0f0f0f, #1f1e1e);
   background-size: 200% 100%;
-  animation: desplazamiento 5s linear infinite alternate;
+  animation: desplazamiento 8s linear infinite alternate;
 }
 
 @keyframes desplazamiento {
@@ -12,6 +12,7 @@
     background-position: 100% 50%;
   }
 }
+
 
 
 
@@ -113,7 +114,7 @@
   --body-color: hsl(var(--hue-color), 4%, 6%);
   --container-color: hsl(var(--hue-color), 4%, 10%);
   --text-gradient: linear-gradient(hsl(var(--hue-color), 14%, 54%), hsl(var(--hue-color), 14%, 18%));
-  --text-gradient2: linear-gradient(to bottom right, #FF7602, #C64402);
+  --text-gradient2: linear-gradient(to bottom right, #ff9a02, #C64402);
   --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
   --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
   /*========== Font and typography ==========*/
@@ -208,6 +209,7 @@ img {
 }
 
 .section__title {
+  font-family: actay-bold;
   font-size: var(--bigger-font-size);
   text-align: center;
   margin-bottom: var(--mb-2-5);
@@ -339,8 +341,8 @@ img {
   position: absolute;
   top: 2rem;
   right: 1.5rem;
+ 
 }
-
 
 .home__data {
   padding-top: 5rem;
@@ -376,10 +378,12 @@ strong {
 }
 
 .home__title-description {
-  color: #FF6200;
+  background: linear-gradient(to bottom right, #ff7c02, #C64402);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: visuelt-bold;
   font-size: var(--h2-font-size);
-  font-weight: 900;
+  font-weight: bolder;
   margin-bottom: var(--mb-1);
 }
 
@@ -413,6 +417,7 @@ strong {
 }
 
 .button--flex {
+  font-family: visuelt-medium;
   display: inline-flex;
   align-items: center;
   column-gap: .75rem;
@@ -443,7 +448,7 @@ strong {
 }
 
 .specs__content {
-  margin-right: 20%;
+  margin-right: 30%;
   row-gap: 2.5rem;
 }
 .col {
@@ -474,8 +479,13 @@ strong {
   font-weight: var(--font-medium);
 }
 .specs__title2 {
+ /*  text-decoration: underline;
+  text-decoration-color: #FF6200;
+  text-decoration-thickness: 2px; */
+  
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
+  margin-bottom: 10px;
 }
 
 .specs__subtitle {
@@ -517,7 +527,6 @@ strong {
   line-height: var(--text-line-height);
 }
 .case__description2 {
- font-weight: 50;
   margin-bottom: var(--mb-1-5);
   line-height: var(--text-line-height);
 }
@@ -525,8 +534,8 @@ strong {
 .discount__container {
   position: relative;
   /* background-color: var(--container-color); */
-  background-color: #3f3e3d23;
-  border: 2px solid #FF6200;
+  background: linear-gradient(to bottom right,#e44c00, #FF7602);
+  /* border: 2px solid #FF6200; */
 /*   background-image: url("assets/img/section3Bg.png"); */
  /*  opacity: 1; */
   padding: 2rem 1.5rem;
@@ -534,12 +543,16 @@ strong {
 }
 
 .discount__title {
-  
+  /* text-decoration: underline;
+  text-decoration-color: #FF6200 ;
+  text-decoration-thickness: 3px; */
+  color: white;
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-75);
 }
 
 .discount__description {
+  color: white;
   margin-bottom: var(--mb-1);
 }
 
@@ -763,7 +776,7 @@ strong {
     font-size: var(--small-font-size);
   }
   .specs__img {
-    width: 200px;
+    width: 00px;
   }
   .case__container {
     grid-template-columns: .6fr 1fr;
@@ -771,7 +784,7 @@ strong {
   .case__img {
     width: 220px;
     top: -2rem;
-    left: -9rem;
+    left: -4rem;
   }
   .case__data {
     padding: 0;
@@ -789,6 +802,12 @@ strong {
     padding: 0% 12%;
     padding-top: 2%;
 }
+
+.specs__content {
+  margin-left: 13%;
+  row-gap: 2.5rem;
+}
+
 }
 
 /* For medium devices */
@@ -885,9 +904,9 @@ strong {
     padding-top: 8rem;
   }
   .specs__img {
-    margin-left: 8%;
-    padding-top: 5%;
-    width: 400px;
+    margin-left: 14%;
+    padding-top: 6%;
+    width: 417px;
   }
   .case__container {
     margin-top: 3rem;
@@ -940,10 +959,13 @@ strong {
     width: 450px;
     left: -4rem;
     top: 4.7rem;
+  /*   transition: transform 500ms ease-in-out;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: transform 0.4s; */
   }
-  .home__img:hover{
-    transform: scale(1.2);
-  }
+/*   .home__img:hover{
+    scale: 1.1;
+  } */
  
   .home__img2 {
 
@@ -975,4 +997,3 @@ strong {
     margin-top: 9rem;
   }
 }
-
