@@ -539,12 +539,13 @@ strong {
 .discount__container {
   position: relative;
   /* background-color: var(--container-color); */
-  background: linear-gradient(to bottom right,#e44c00, #FF7602);
+  background: linear-gradient(to bottom right,#1f2122, #181A1B);
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
   /* border: 2px solid #FF6200; */
 /*   background-image: url("assets/img/section3Bg.png"); */
  /*  opacity: 1; */
   padding: 2rem 1.5rem;
-  border-radius: 2.75rem;
+  border-radius: 1.75rem;
 }
 
 .discount__title {
