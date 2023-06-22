@@ -1,7 +1,7 @@
 .gradient-infinito {
-  background: linear-gradient(to right, #0f0f0f, #1f1e1e);
+  background: linear-gradient(to right, #0f0f0f, #202020);
   background-size: 200% 100%;
-  animation: desplazamiento 8s linear infinite alternate;
+  animation: desplazamiento 6s linear infinite alternate;
 }
 
 @keyframes desplazamiento {
@@ -426,6 +426,10 @@ strong {
 /*=============== SPONSOR ===============*/
 .sponsor__img {
   width: 90px;
+  transition: transform 0.9s ease-in-out;
+}
+.sponsor__img:hover{
+  scale: 1.1;
 }
 
 .sponsor__container {
@@ -448,6 +452,7 @@ strong {
 }
 
 .specs__content {
+  margin-top: 25px;
   margin-right: 30%;
   row-gap: 2.5rem;
 }
@@ -985,6 +990,7 @@ strong {
     padding-right: 5rem;
   }
   .sponsor__img {
+    transition: transform 0.9s ease-in-out;
     width: 100px;
   }
   .discount__img {
