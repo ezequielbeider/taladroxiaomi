@@ -786,6 +786,16 @@ scale: 1.03;
 }
 /* For small devices */
 @media screen and (max-width: 573px) {
+
+  .sponsor__container {
+    margin-top: 2%;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    row-gap: 5rem;
+    justify-items: center;
+    align-items: center;
+  }
+
+
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -795,7 +805,7 @@ scale: 1.03;
   }
   .section__title {
     text-align: left;
-    padding-left: 3rem;
+    padding-left: 1rem;
     font-size: var(--big-font-size);
   }
   .nav__logo {
