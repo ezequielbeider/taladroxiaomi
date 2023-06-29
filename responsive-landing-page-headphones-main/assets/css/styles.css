@@ -4,12 +4,11 @@
 }
 
 .redondeado{
-  border-radius: 60px 60px 0px 0px;
+  padding-left: 420px;
+  padding-right: 420px;
 }
 .espacio{
- 
-  padding-left: 200px;
-  padding-right: 200px;
+  border-radius: 20px;
 }
 
 
@@ -67,7 +66,7 @@
   align-items: center;
   gap: 10px;
   position: absolute;
-  margin-left: 262px;
+  margin-left: 562px;
 }
 
 
@@ -866,6 +865,45 @@ scale: 1.03;
 }
 /* For small devices */
 @media screen and (max-width: 573px) {
+
+  .boton-circular-negro {
+    left: 10rem;
+   /*  position: absolute; */
+    top: 700px;
+    border: none;
+    border-radius: 20%;
+    width: 40px;
+    height: 40px;
+    background-color: #252525;
+    cursor: pointer;
+    margin-right: 0.7%;
+  }
+  .boton-circular-azul {
+    left: 18rem;
+    /* position: absolute; */
+    top: 700px;
+    border: none;
+    border-radius: 20%;
+    width: 40px;
+    height: 40px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    margin-right: 0.7%;
+  }
+  .boton-circular-blanco {
+    left: 14rem;
+    /* position: absolute; */
+    top: 700px;
+    border: none;
+    border-radius: 20%;
+    width: 40px;
+    height: 40px;
+    background-color: #020088;
+    cursor: pointer;
+    margin-right: 0.7%;
+  }
+
+
   .espacio{
  
     padding-left: 0px;
@@ -873,12 +911,15 @@ scale: 1.03;
   }
 
   .redondeado{
-    border-radius: 0px 0px 0px 0px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .cambiadorDeFotos{
+    justify-content: center;
     margin-left: 64px;
-    top: 1rem;
+    margin-top: 2rem;
+    top: 0rem;
     flex-direction: column;
   }
   
@@ -1051,6 +1092,19 @@ scale: 1.03;
     padding: 0% 24%;
     padding-top: 2%;
 }
+.redondeado{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.cambiadorDeFotos{
+  bottom: 25%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  margin-left: 68px;
+}
+
 }
 
 /* Large - 1 */
@@ -1160,6 +1214,20 @@ scale: 1.03;
   justify-items: center;
   align-items: center;
 }
+.redondeado{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.cambiadorDeFotos{
+  bottom: 25%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  margin-left: 162px;
+}
+
   
 }
 
@@ -1214,5 +1282,20 @@ scale: 1.03;
   .footer__copy {
     margin-top: 9rem;
   }
+
+  .redondeado{
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .cambiadorDeFotos{
+    bottom: 25%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    margin-left: 262px;
+  }
+
   
 }
