@@ -78,7 +78,10 @@ sr.reveal(`.home__footer`,{delay: 700})
 sr.reveal(`.home__img`,{delay: 900, origin: 'top'})
 sr.reveal(`.home__img2`,{delay: 900, origin: 'top'})
 
+sr.reveal(`.cambiadorDeFotos`,{delay: 400, origin: 'top'})
+
 sr.reveal(`.discount__container`,{delay: 900, origin: 'top'})
+sr.reveal(`.fotogrande`,{delay: 900, origin: 'top'})
 
 sr.reveal(`.discount__img`,{delay: 900, origin: 'top'})
 sr.reveal(`.discount__animate`,{delay: 900, origin: 'top'})
@@ -92,3 +95,9 @@ sr.reveal(`.specs__data, .discount__animate`,{origin: 'left', interval: 100})
 sr.reveal(`.specs__img, .discount__img`,{origin: 'right'})
 sr.reveal(`.case__img`,{origin: 'top'})
 sr.reveal(`.case__data`)
+
+var fotos = ["assets/img/section11Bg.png", "assets/img/section11Bgblue.png", "assets/img/section11Bgwhite.png"];
+function cambiarFoto(indice) {
+    var imagen = document.getElementById("myImage");
+    imagen.src = fotos[indice];
+  }
