@@ -957,7 +957,7 @@ scale: 1.03;
   .section__title {
     text-align: left;
     padding-left: 1rem;
-    font-size: var(--big-font-size);
+    font-size: 2rem
   }
   .nav__logo {
     width: 4rem;
